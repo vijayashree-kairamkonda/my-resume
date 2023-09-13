@@ -1,4 +1,3 @@
-import "../src/main.css";
 
 export const Main = () => {
   const workExperience = [

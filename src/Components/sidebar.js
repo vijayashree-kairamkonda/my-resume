@@ -1,6 +1,3 @@
-import "../App.css";
-import "../Components/sidebar.css";
-
 export const Sidebar = () => {
   const contactList = [
     {
