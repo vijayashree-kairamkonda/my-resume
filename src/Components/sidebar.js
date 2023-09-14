@@ -21,7 +21,7 @@ export const Sidebar = () => {
     },
     {
       label: linkedInIcon,
-      value: "website",
+      value: "https://www.linkedin.com/in/vijayashree-kairamkonda-7227581bb/",
     },
   ];
 
