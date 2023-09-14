@@ -30,7 +30,11 @@ li {
   font-size: small;
 }
 
-img{
+img {
   height: 30px;
   width: 20px;
+}
+
+a {
+  text-decoration: none;
 }

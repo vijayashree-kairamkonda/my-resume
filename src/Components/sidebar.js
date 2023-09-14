@@ -10,18 +10,22 @@ export const Sidebar = () => {
     {
       label: phoneIcon,
       value: "9949916301",
+      link: "9949916301",
     },
     {
       label: envelopIcon,
       value: "vijayashree369@gmail.com",
+      link: "mailto:vijayashree369@gmail.com",
     },
     {
       label: locationIcon,
       value: "Hyderabad",
+      link: "https://www.google.com/maps/place/Hyderabad,+Telangana/@17.4126086,78.2432325,11z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99daeaebd2c7:0xae93b78392bafbc2!8m2!3d17.385044!4d78.486671!16zL20vMDljNnc?entry=ttu",
     },
     {
       label: linkedInIcon,
-      value: "https://www.linkedin.com/in/vijayashree-kairamkonda-7227581bb/",
+      value: "LinkedIn",
+      link: "https://www.linkedin.com/in/vijayashree-kairamkonda-7227581bb/",
     },
   ];
 
@@ -38,7 +42,7 @@ export const Sidebar = () => {
           return (
             <section className="contact-list">
               <img src={item.label} alt="label" />
-              <div>{item.value}</div>
+              <a href={item.link}>{item.value}</a>
             </section>
           );
         })}
