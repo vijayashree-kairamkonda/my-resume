@@ -1,22 +1,26 @@
 import "../App.css";
 import "../Components/sidebar.css";
+import linkedInIcon from "../assets/icons/bi_linkedin.svg";
+import envelopIcon from "../assets/icons/EnvelopeSimpleOpen.svg";
+import locationIcon from "../assets/icons/MapPin.svg";
+import phoneIcon from "../assets/icons/Phone.svg";
 
 export const Sidebar = () => {
   const contactList = [
     {
-      label: "phone",
+      label: phoneIcon,
       value: "9949916301",
     },
     {
-      label: "mail",
+      label: envelopIcon,
       value: "vijayashree369@gmail.com",
     },
     {
-      label: "location",
+      label: locationIcon,
       value: "Hyderabad",
     },
     {
-      label: "linkedin",
+      label: linkedInIcon,
       value: "website",
     },
   ];
@@ -33,7 +37,7 @@ export const Sidebar = () => {
         {contactList.map((item) => {
           return (
             <section className="contact-list">
-              <div>{item.label}</div>
+              <img src={item.label} alt="label" />
               <div>{item.value}</div>
             </section>
           );

@@ -9,8 +9,8 @@
 
 .contact-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 12px;
   padding: 6px 0;
   flex-wrap: wrap;
 }
